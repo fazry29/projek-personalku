@@ -3,10 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-
 const ContactSection = () => {
-  return (
-    <section id="contact" className="py-20 bg-background">
+  return <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -62,7 +60,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Lokasi</p>
-                    <p className="text-muted-foreground">Jakarta, Indonesia</p>
+                    <p className="text-muted-foreground">Medan, Indonesia</p>
                   </div>
                 </div>
               </div>
@@ -98,10 +96,7 @@ const ContactSection = () => {
                     <label className="block text-sm font-medium text-foreground mb-2">
                       Pesan
                     </label>
-                    <Textarea 
-                      placeholder="Ceritakan tentang proyek atau kebutuhan Anda..."
-                      rows={5}
-                    />
+                    <Textarea placeholder="Ceritakan tentang proyek atau kebutuhan Anda..." rows={5} />
                   </div>
 
                   <Button type="submit" size="lg" className="w-full flex items-center gap-2">
@@ -114,8 +109,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
